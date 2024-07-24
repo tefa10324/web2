@@ -1,0 +1,615 @@
+/* Reset CSS */
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, td, video, tt, u, ul, var {
+    background: transparent;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    vertical-align: top;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+table, table td {
+    padding: 0;
+    border: none;
+    border-collapse: collapse;
+}
+
+img {
+    vertical-align: top;
+}
+
+embed {
+    vertical-align: top;
+}
+
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video {
+    display: block;
+}
+
+mark, rp, rt, ruby, summary, time {
+    display: inline;
+}
+
+input, textarea {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+
+iframe {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input, textarea, select {
+    margin: 0;
+    padding: 0;
+}
+
+/* -------------------------------------------- */
+/* ------------------Style---------------------- */
+/* -------------------------------------------- */
+html, body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(45deg, #0bc0ae, #00aaff, #004aad, #0bc0ae);
+    background-size: 600% 600%;
+    animation: gradientBG 15s ease infinite;
+    color: #292929;
+    font: 16px/1.5 'Bebas Neue', sans-serif; /* Usa la fuente Bebas Neue */
+}
+
+/* Animación de fondo */
+@keyframes gradientBG {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+/* Incluye Google Fonts para la fuente Bebas Neue */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+/* Links */
+a {
+    color: #00BF9C;
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave en el color */
+}
+
+a:hover {
+    color: #006699;
+}
+
+/* Botones */
+a.button, input.button {
+    cursor: pointer;
+    color: #fff;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background: #007BFF; /* Fondo azul más destacado */
+    border: 1px solid #0056b3; /* Borde azul oscuro */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Padding más grande */
+    transition: background 0.3s, color 0.3s; /* Transición suave en el fondo y color */
+}
+
+a.button:hover, input.button:hover {
+    background: #0056b3; /* Fondo más oscuro al pasar el mouse */
+    color: #fff; /* Color blanco para el texto */
+}
+
+/* Header */
+header {
+    height: 150px;
+    width: 100%;
+    background: url('../images/FONDO.gif') repeat-x;
+    margin-bottom: 20px; /* Espaciado aumentado */
+}
+
+header #logo {
+    margin-top: 20px; /* Espaciado aumentado */
+}
+
+header #search-box {
+    position: relative;
+    width: 350px;
+    margin-top: 20px; /* Espaciado ajustado */
+}
+
+header #search-form {
+    height: 30px;
+    border: 1px solid #999;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+header #search-text {
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+}
+
+header #search-box input[type="text"] {
+    width: 80%;
+    padding: 5px 0 5px 1em;
+    color: #333;
+    outline: none;
+}
+
+header #search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: 90px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+    background-color: #007BFF;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Transición suave en el fondo */
+}
+
+header #search-button:hover {
+    background-color: #0056b3; /* Fondo más oscuro al pasar el mouse */
+}
+
+/* Menú */
+nav {
+    width: 960px;
+    height: 50px;
+    margin: 0 auto 20px auto; /* Espaciado ajustado */
+    background: #060757e5 url(../images/lines2.png) no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    position: relative;
+    padding: 0 15px;
+}
+
+nav ul li:hover {
+    background: #2995fa url('../images/lines.png') no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    font-size: 18px; /* Tamaño de fuente aumentado */
+    line-height: 50px;
+    color: #ffffff;
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li:hover a {
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.3); /* Fondo más visible en hover */
+    border-radius: 5px;
+}
+
+/* Contenido */
+#content {}
+
+.block {
+    padding: 20px 0;
+    background: #ffffff;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.main-content article {
+    margin: 20px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-content .heading h2 {
+    font-size: 24px; /* Tamaño de fuente aumentado */
+    line-height: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.main-content .heading .info {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.main-content .content img {
+    float: left;
+    margin: 5px 30px 0 0;
+    border: #BDBDBD 5px solid;
+    border-radius: 5px; /* Bordes redondeados en las imágenes */
+}
+
+.sidebar section {
+    margin-bottom: 20px;
+}
+
+.sidebar .heading {
+    color: #ffffff;
+    background: #06571ae5 url('../images/boxtitle.png') no-repeat left center;
+    font-size: 24px; /* Tamaño de fuente aumentado */
+    font-weight: normal;
+    padding: 15px 10px 15px 50px; /* Padding aumentado */
+}
+
+.sidebar .content {
+    padding: 20px;
+}
+
+.sidebar .content img {
+    float: left;
+    margin: 10px;
+    border: #BDBDBD 5px solid;
+    border-radius: 5px;
+}
+
+.featured {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.list li {
+    padding: 0 0 5px 15px;
+    line-height: 30px; /* Ajuste de altura para mejor legibilidad */
+    background: url(../images/marker-1.gif) 0 11px no-repeat;
+}
+
+ul.list li a {
+    font-size: 16px; /* Tamaño de fuente aumentado */
+    color: #292929;
+    line-height: 30px;
+}
+
+ul.list li a:hover {
+    color: #006699;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: #7e5bd1e5;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+footer .heading {
+    color: #ffffff;
+    padding-bottom: 10px;
+    font-size: 22px; /* Tamaño de fuente aumentado */
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+footer .content img {
+    float: left;
+    margin: 10px;
+    border: #ffffff 5px solid;
+    border-radius: 5px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer ul li {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+footer ul li a {
+    font-size: 16px; /* Tamaño de fuente aumentado */
+    color: #ffffff;
+}
+
+footer ul li a:hover {
+    color: #006699;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botones destacados */
+button {
+    cursor: pointer;
+    outline: 0;
+    width: 200px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #2C3138;
+    margin-top: 40px;
+    overflow: hidden;
+    transform: scale(.8);
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    display: block;
+    width: 50px;
+    height: 120%;
+    background-color: #000;
+    margin-top: -1px;
+    margin-left: -8px;
+    border-radius: 6px 0 0 6px;
+    background-image: url('imagenes/ima/check.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+button::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-left: -8px;
+    margin-top: -1px;
+    transition: all 200ms cubic-bezier(0.25, 0.75, 0.5, 1.25);
+}
+
+.box-1:hover button::before {
+    width: 130%;
+    opacity: .8;
+    background-color: #00BF9C;
+}
+
+.box-2:hover button::before {
+    width: 130%;
+    opacity: .8;
+    background-color: #653EE6;
+}
+
+.box-3:hover button::before {
+    width: 130%;
+    opacity: .8;
+    background-color: #008BFF;
+}
+
+.box-4:hover button::before {
+    width: 130%;
+    opacity: .8;
+    background-color: #ff0000;
+}
+
+/* Contenedor */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80vw;
+    height: 40vh;
+    margin-left: 10vw;
+    transform: rotateX(23deg) rotateZ(-9deg) rotateY(15deg) scale3d(1, 1, -0.9);
+}
+
+/* Caja */
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: all .3s ease-out;
+    will-change: transform;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.box:hover .cover {
+    transform: translateY(-15px) scale(1.05);
+}
+
+.box-1 button {
+    border: 2px solid #00BF9C;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 25px;
+    line-height: 48px;
+}
+
+.box-1 .cover::after {
+    background-image: url("imagenes/ima/uce.png");
+}
+
+.box-2 button {
+    border: 2px solid #653EE6;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 25px;
+    line-height: 48px;
+}
+
+.box-2 .cover::after {
+    background-image: url("imagenes/ima/insta.png");
+}
+
+.box-3 button {
+    border: 2px solid #008BFF;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 25px;
+    line-height: 48px;
+}
+
+.box-3 .cover::after {
+    background-image: url("imagenes/ima/face.png");
+}
+
+.box-4 button {
+    border: 2px solid #ff0000;
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    padding-right: 25px;
+    line-height: 48px;
+}
+
+.box-4 .cover::after {
+    background-image: url('imagenes/ima/you.png');
+}
+
+.cover {
+    transition: all 400ms ease-in-out;
+    will-change: transform;
+}
+
+.cover img {
+    transition: all 260ms ease-in-out;
+}
+
+.box .cover::after {
+    content: "";
+    z-index: -99;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    width: 160px;
+    height: 220px;
+    opacity: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 160px 220px;
+    filter: blur(24px);
+    transition: all 260ms ease-in-out;
+    transform: scale(.6);
+}
+
+.box:hover .cover::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.box-1 .cover::after {
+    background-image: url("imagenes/ima/uce.png");
+}
+
+.box-2 .cover::after {
+    background-image: url("imagenes/ima/insta.png");
+}
+
+.box-3 .cover::after {
+    background-image: url("imagenes/ima/face.png");
+}
+
+.box-4 .cover::after {
+    background-image: url('imagenes/ima/you.png');
+}
+
+/* Texto en botones */
+.box-1 button div::before {
+    content: 'Whatsapp';
+    position: relative;
+    top: -44px;
+    left: -4px;
+    color: #12c71b;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.box-1:hover button div::before {
+    color: #fff;
+}
+
+.box-2 button div::before {
+    content: 'Instagram';
+    position: relative;
+    top: -44px;
+    left: -6px;
+    color: rgb(154, 123, 255);
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.box-2:hover button div::before {
+    color: #fff;
+}
+
+.box-3 button div::before {
+    content: 'Facebook';
+    position: relative;
+    top: -44px;
+    left: 3px;
+    color: #008BFF;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.box-3:hover button div::before {
+    color: #fff;
+}
+
+.box-4 button div::before {
+    content: 'Youtube';
+    position: relative;
+    top: -44px;
+    left: -9px;
+    color: #df3c1f;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.box-4:hover button div::before {
+    color: #fff;
+}
+
+/* Footer copyright */
+#copyright {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background: url(../images/bg-footer.png);
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif; /* Cambia la fuente aquí */
+    font-weight: 400; /* Peso de la fuente */
+}

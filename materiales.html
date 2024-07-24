@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+    
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Bungee', cursive;
+      background-color: #9453c9;
+    }
+
+    body {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #011013;
+    }
+
+    header {
+      width: 100%;
+      height: 100px;
+      background-color: #9453c9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .image-container img {
+      max-width: 10%;
+      height: auto;
+    }
+
+    .image-container label {
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #333;
+      text-align: center;
+      margin: 0 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sections-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      flex-grow: 1;
+      padding: 10px;
+    }
+
+    section {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    article {
+      background-color: #81df75;
+      margin: 10px;
+      padding: 20px;
+      color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: scale(0);
+      animation: growIn 0.5s forwards;
+      max-width: 300px;
+      flex: 1;
+      box-sizing: border-box;
+    }
+
+    @keyframes growIn {
+      to {
+        transform: scale(1);
+      }
+    }
+
+    article h1 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #333;
+      text-transform: uppercase;
+    }
+
+    article label {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    article img {
+      margin-top: 10px;
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    article img:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      width: 100%;
+      height: 100px;
+      background-color: #8a038a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1em;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="image-container">
+      <img src="images/log34.jpeg" width="500px" height="500px" alt="Imagen 1">
+      <label>STHEFANNY <br> TIENDA DE MATERIAL</label>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sections-container">
+      <section>
+        <article>
+          <center>
+          <h1>TUBO EMT LIVIANO 3/4″</h1>
+          <label>TUBERÍA EMT LIVIANA DE 3/4 PULGADA</label>
+          <img src="images/tub1.png" width="200px" height="100px">
+          </center>
+        </article>
+        <article>
+          <center>
+          <h1>PANELES INTELIGENTES HEXAGONALES</h1>
+          <label>SKU: 02.001.0230<br>
+            Categorías: APLIQUES DECORATIVOS, ILUMINACIÓN<br>
+            Etiquetas: APLIQUES DECORATIVOS, ILUMINACION</label>
+          <img src="images/HEX2.jpg" width="200px" height="100px">
+          </center>
+        </article>
+        <article>
+          <center>
+          <h1>CABLE FLEXIBLE VERDE</h1>
+          <label>CABLE FLEXIBLE MARCA INDUSCABOS<br>
+            NO. 14</label>
+          <img src="images/VERDE.png" width="200px" height="100px">
+          </center>
+        </article>
+      </section>
+      <section>
+        <article>
+          <center>
+          <h1>FOCO SMART VINTAGE</h1>
+          <label>FOCO SMART VINTAGE EDISON<br>
+            Categorías: DECORATIVA, ILUMINACIÓN, LÁMPARAS<br>
+            WATTS: 6</label>
+          <img src="images/VIN1.jpg" width="200px" height="100px">
+          </center>
+        </article>
+        <article>
+          <center>
+          <h1>LÁMPARA COLGANTE PLATO</h1>
+          <label>SKU: LD5028<br>
+            Categorías: DECORATIVA, ILUMINACIÓN, LÁMPARAS<br>
+            Etiqueta: LAMPARA DECORATIVA</label>
+          <img src="images/LM2.jpg" width="200px" height="100px">
+          </center>
+        </article>
+        <article>
+          <center>
+          <h1>LETRERO DE SALIDA LED</h1>
+          <label>Señalizador de salida Led de alta luminosidad, con botón de prueba e indicador de carga. Cuerpo plástico inyectado, material ignífugo.</label>
+          <img src="images/S1.jpg" width="200px" height="100px">
+          </center>
+        </article>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 STHEFANNY TUTACHA.
+  </footer>
+</body>
+</html>
+

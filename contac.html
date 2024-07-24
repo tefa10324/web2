@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+  
+  
+
+	<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form UI</title>
+  <link rel="stylesheet" media="all" href="style2.css" />
+</head>
+  
+
+    
+    <!-- CSS
+  ================================================== -->
+	
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="all" href="style2.css" />
+
+	
+	<link href='./images/logo23.jpeg' rel='icon' type='image/x-icon'/>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/responsiveslides.js"></script>
+	
+    
+</head>
+<body>
+
+<header> 
+  
+
+</header>
+
+
+
+<nav>
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="vision.html">Visión</a></li>
+		<li><a href="index2.html">Redes Sociales</a></li>
+		<li><a href="contac.html">Contactos</a></li>
+    <li><a href="materiales.html">Materiales</a></li>
+  
+  </ul>
+  </nav>
+
+				<tr>
+    <form class="form">
+      <center><h2>CONTÁCTENOS</h2></center>
+
+      <form class="form" id="contact-form">
+        <form id="contact-form">
+
+          <label for="name">Nombre :</label>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="ape">Apellido:</label>
+          <input type="text" id="ape" name="ape" required><br><br>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+  
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="4" required="" style="height: 82px; width: 277px;"></textarea>
+
+  
+  
+  
+          <button type="button" onclick="mostrarResultado()">Enviar Resultado</button>
+          
+      </form>
+      </form>
+      <center><h2>Resultado:</h2></center>
+      <div id="result"></div>
+      
+  
+      <script>
+
+        
+        
+          function mostrarResultado() {
+              const name = document.getElementById("name").value;
+              const ape = document.getElementById("ape").value;
+              const email = document.getElementById("email").value;
+              const message = document.getElementById("message").value;
+             
+              const resultDiv = document.getElementById("result");
+              resultDiv.innerHTML = `
+                  <p><strong>Nombre:</strong> ${name}</p>
+                  <p><strong>Apellido:</strong> ${ape}</p>
+                  <p><strong>Email:</strong> ${email}</p>
+                  <p><strong>Mensaje:</strong> ${message}</p>
+                  
+              `;
+          }
+      </script>
+
+
+</footer>
+
+
+
+</body></html>
+
+
+
